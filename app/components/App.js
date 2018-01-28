@@ -9,7 +9,7 @@ class App extends React.Component {
     return (
       <Router>
         <div className="container">
-          <Route path="/" component={Populer} />
+          <Route path="/popular" component={Popular} />
         </div>
       </Router>
     )
