@@ -76,4 +76,23 @@ a {
 
 .button {
   color: #E6E6E6;
+  background-color: #0A0A0A;
+  border: none;
+  font-size: 16px;
+  border-radius: 3px;
+  width: 200px;
+  text-align: center;
+  display: block;
+  padding: 7px 0;
+  margin: 10px auto;
+}
+
+.button:hover:enabled {
+  background: linear-gradient(#1A1A1A, #0A0A0A);
+  color: #FFF;
+  text-decoration: none;
+}
+
+.button:active {
+  transform: translateY(1px);
 }
