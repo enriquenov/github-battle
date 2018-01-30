@@ -8,6 +8,7 @@ class PlayerInput extends React.Component {
       username: ''
     }
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
@@ -90,14 +91,16 @@ class Battle extends React.Component {
         <div className="row">
           {!playerOneName &&
             <PlayerInput
-              id="PlayerOne"
+              id="playerOne"
               label="Player One"
-              onSubmit={this.handleSubmit}/>}
+              onSubmit={this.handleSubmit}
+            />}
           {!playerTwoName &&
             <PlayerInput
-              id="PlayerTwo"
+              id="playerTwo"
               label="Player Two"
-              onSubmit={this.handleSubmit}/>}
+              onSubmit={this.handleSubmit}
+            />}
         </div>
       </div>
     )
