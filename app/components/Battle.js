@@ -23,8 +23,10 @@ class PlayerInput extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    //COMPLETE THIS. MINUTE 20
-
+    this.props.onSubmit(
+      this.props.id,
+      this.state.username
+    )
   }
 
   render() {
@@ -44,7 +46,7 @@ class PlayerInput extends React.Component {
         <button
           className="button"
           type="submit"
-          disabled={!this.state.username}
+          disabled={!this.state.username} >
             Submit
         </button>
       </form>
