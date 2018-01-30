@@ -123,3 +123,16 @@ a {
 .button:active {
   transform: translateY(1px);
 }
+
+.reset {
+  border: none;
+  background: transparent;
+  color: #D0021B;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.reset:hover {
+  cursor: pointer;
+}
