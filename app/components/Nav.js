@@ -1,5 +1,9 @@
 var React = require('react');
-// var Link = require('react-router-dom').Link;  NavLink is better for an active element.
+
+// var Link = require('react-router-dom').Link;
+// NavLink is better than just Link when an active class for 
+// an element is needed (like for menus/navbars).
+
 var NavLink = require('react-router-dom').NavLink;
 
 function Nav() {
