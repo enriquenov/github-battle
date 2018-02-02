@@ -73,7 +73,7 @@ class Popular extends React.Component{
   }
 
   updateLanguage(lang) {
-    this.setState(function(){
+    this.setState(() => {
       return {
         selectedLanguage: lang,
         repos: null,
@@ -82,7 +82,7 @@ class Popular extends React.Component{
 
     api.fetchPopularRepos(lang)
     .then(function(repos){
-      this.setState(function(){
+      this.setState(() => {
         return {
           repos: repos
         }
